@@ -8,14 +8,14 @@ prib = 0
 if vyr < 0 or izd <= 0:
     print("Выручка не должна быть меньше 0. Издержки должны превышать нулевое значние!")
 else:
-    if (vyr >= izd) and vyr != 0 and izd !=0:
+    if vyr >= izd and vyr != 0 and izd !=0:
         prib = vyr - izd
-        print('Вы в прибыли:', prib)
-        print('Рентабельнрость: ', prib / vyr, 'рублей')
+        print(F'Вы в прибыли: {prib}')
+        print(f'Рентабельнрость: {prib / vyr} рублей')
         sotr = int(input('сколько сотрудников в фирме? - '))
         if sotr != 0:
-            print('Прибыль на сотрудника составила: ', vyr / sotr, 'рублей')
+            print(f'Прибыль на сотрудника составила: {vyr / sotr} рублей')
         else:
             print('Колличество сотрудников не дожно быть равным 0')
     else:
-        print('В убытке на:', izd - vyr, 'рублей')
+        print(f'В убытке на: {izd - vyr} рублей')
