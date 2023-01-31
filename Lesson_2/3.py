@@ -9,6 +9,6 @@ vg_dict = {'зима': ['декабрь', 'январь', 'февраль'], 'в
 for el in m_dict:  # Проверка элементана на наличие в словаре
     if m_dict[el] == m:    # Если есть совпадение
         print(f'Это месяц: {el}')
-        for vg in vg_dict.items:
+        for vg in vg_dict.items():
             vg == m_dict[el]
             print(vg)
