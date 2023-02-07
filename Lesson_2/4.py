@@ -4,7 +4,7 @@
 
 s = input('Введите несколько слов через пробемл: ')
 print('Список слов: ', s)
-new_s = [s]
+ёnew_s = [s]
 for i in new_s:
     i1 = i +
 print(new_s)
